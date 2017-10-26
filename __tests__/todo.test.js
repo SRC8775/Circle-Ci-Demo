@@ -11,5 +11,5 @@ test('TodoComponent calls doneChange when todo is clicked', () => {
 
   const p = wrapper.find('.toggle-todo');
   p.simulate('click');
-  expect(doneChange).nottoBeCalledWith(1);
+  expect(doneChange).toBeCalledWith(1);
 });
